@@ -24,16 +24,16 @@ for ((i=1; i<20; i+=2))
 tput sgr0; tput setaf 3
 
 # Trunk
-for ((i=1; i<=2; i++))
+for ((i=1; i<=1; i++))
 {
     tput cup $((lin++)) $c
-    echo 'mWm'
+    echo 'Zheng Bo'
 }
 new_year=$(date +'%Y')
 let new_year++
 tput setaf 1; tput bold
-tput cup $lin $((c - 6)); echo MERRY CHRISTMAS
-tput cup $((lin + 1)) $((c - 10)); echo And lots of CODE in $new_year
+tput cup $lin $((c - 6)); echo Merry Christmas
+tput cup $((lin + 1)) $((c - 10)); echo Wish you lots of Happiness in $new_year
 let c++
 k=1
 
@@ -55,7 +55,7 @@ while true; do
         echo o
         line[$k$i]=$li
         column[$k$i]=$co
-        color=$(((color+1)%8))
+        color=$(((color)%8))
         # Flashing text
         sh=1
         for l in C O D E
