@@ -33,7 +33,7 @@ new_year=$(date +'%Y')
 let new_year++
 tput setaf 1; tput bold
 tput cup $lin $((c - 6)); echo Merry Christmas
-tput cup $((lin + 1)) $((c - 10)); echo Wish you lots of Happiness in $new_year
+tput cup $((lin + 1)) $((c - 10)); echo Wish you lots of in $new_year
 let c++
 k=1
 
@@ -55,10 +55,10 @@ while true; do
         echo o
         line[$k$i]=$li
         column[$k$i]=$co
-        color=$(((color)%8))
+        color=$(((color+1)%8))
         # Flashing text
         sh=1
-        for l in C O D E
+        for l in  H a p p i n e s s
         do
             tput cup $((lin+1)) $((c+sh))
             echo $l
