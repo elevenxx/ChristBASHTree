@@ -27,7 +27,7 @@ tput sgr0; tput setaf 3
 for ((i=1; i<=1; i++))
 {
     tput cup $((lin++)) $c
-    echo '郭格'
+    echo '郭格，刘紫逸，许宇璇，马心睿'
 }
 new_year=$(date +'%Y')
 let new_year++
